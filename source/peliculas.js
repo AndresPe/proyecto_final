@@ -22,12 +22,10 @@ router.get("/pelicula/:nombre", (request, response)=>{
     respuesta.cantidad = 0
     respuesta.mensaje = "la pelicula no existe"
     response.send(respuesta)
-
   } catch (error) {
     console.log(error);
     response.status(400).send(error)
   }
-
 })
 
 router.get("/peliculas", function(req, res, next) {
@@ -43,10 +41,31 @@ router.get("/peliculas", function(req, res, next) {
 });
 
 router.delete("/peliculas", function(req, res, next) {
-
+  try {
+    var newArrar = [] 
+    let indexNewArray = 0;
+    // console.log(peliculas[indexNewArray]);
+    for (let index = 0; index < peliculas.length; index++) {
+        if (peliculas[index].genero != "") {
+            newArrar[indexNewArray] = peliculas[index]
+            indexNewArray = indexNewArray + 1
+        }
+    }
+  console.log("peliculas filtradas");
+  console.log(newArray);
+  response.status(200).send(newArrar)
   res.status(200).send({
     mensaje: "ESTOY EN EL ENDPOINT DE DELETE"
   });
+  } catch (error) {
+    console.log(error);
+    res.status(400).send({
+      mensaje: "error"
+    });
+  }
+  
+  
+  
 });
 
 module.exports = router;
