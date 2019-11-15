@@ -2,11 +2,11 @@
 
 Una tienda virtual de películas le pide ayuda para filtrar unas películas de la base de datos, para hacer las pruebas le dieron 405 películas las cuales debe de manipular, le solicitaron:
 
-1. [10ptos] Eliminar las películas que no tienen género o esta vació.
+1. [10ptos] Eliminar las películas que no tienen género o esta vació. OK
 2. [10ptos] Listar las películas de comedia. Tener en cuenta que una película puede tener varios generos.
-3. [10ptos] Listar las películas de acuerdo a la ubicación que se le envié como parámetro.
-4. [10ptos] Buscar una película por nombre.
-5. [10ptos] Listar las películas que esten entre dos años que reciba como parámetro.
+3. [10ptos] Listar las películas de acuerdo a la ubicación que se le envié como parámetro. OK
+4. [10ptos] Buscar una película por nombre. OK
+5. [10ptos] Listar las películas que esten entre dos años que reciba como parámetro. OK
 6. Bonificación si lo sube al git
 
 ## NOTA:
